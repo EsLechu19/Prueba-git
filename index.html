@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KINETIC — Train Without Limits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="energy-pulse" id="energyPulse" aria-hidden="true"></div>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileClose" aria-label="Close menu">&times;</button>
+    <ul class="mobile-menu-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#cta">Join</a></li>
+    </ul>
+    <a href="#" class="nav-cta" onclick="closeMobile()">Get Started</a>
+  </div>
+
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="#" class="nav-logo">KINET<span>IC</span></a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#cta">Join</a></li>
+        <li><a href="#" class="nav-cta">Get Started</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Next-Level Performance</p>
+          <h1 class="hero-title">
+            Train Without<br>
+            <em>Limits</em>
+          </h1>
+          <p class="hero-subtitle">
+            Precision-engineered workouts powered by real-time biometric data.
+            Every rep, every set, every heartbeat — optimized for your peak.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn-primary">
+              Start Your Journey
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="btn-secondary">Explore Programs</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-ring">
+            <div class="hero-ring-core">
+              <div class="hero-ring-orbital"></div>
+              <div class="hero-ring-orbital"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#features" class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </a>
+  </section>
+
+  <section class="features section-pad" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">The Kinetic Advantage</p>
+        <h2 class="section-title">Built for <em>results</em>,<br>backed by science</h2>
+        <p class="section-desc">
+          Every program is built on exercise science and adapted to your body's unique response.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Smart Programming</h3>
+          <p class="feature-desc">
+            AI-driven workout adaptation that learns your recovery patterns and adjusts intensity in real time for maximum gains.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Real-Time Tracking</h3>
+          <p class="feature-desc">
+            Live biometric feedback with heart rate, power output, and form analysis — your data streamed to the dashboard instantly.
+          </p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Expert Coaching</h3>
+          <p class="feature-desc">
+            Connect with elite coaches who design your mesocycles and provide video form feedback after every session.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats reveal" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="500">0</div>
+          <p class="stat-label">Expert Programs</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="50">0</div>
+          <p class="stat-label">Athletes (K+)</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="98">0</div>
+          <p class="stat-label">Satisfaction Rate (%)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="programs section-pad" id="programs">
+    <div class="container">
+      <div class="section-header left reveal">
+        <p class="section-label">Our Programs</p>
+        <h2 class="section-title">Every goal needs a <em>plan</em></h2>
+        <p class="section-desc">
+          Structured training blocks designed by world-class coaches for every discipline.
+        </p>
+      </div>
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <span class="program-tag">Strength</span>
+          <h3 class="program-title">Power Foundation</h3>
+          <p class="program-desc">
+            A 12-week progressive overload program focused on the five foundational lifts. Build raw strength with periodised mesocycles and deload weeks built in.
+          </p>
+          <div class="program-meta">
+            <span><strong>12</strong> Weeks</span>
+            <span><strong>5</strong> Sessions/wk</span>
+            <span><strong>45-75</strong> min</span>
+          </div>
+        </div>
+        <div class="program-card reveal">
+          <span class="program-tag">Hypertrophy</span>
+          <h3 class="program-title">Aesthetic Blueprint</h3>
+          <p class="program-desc">
+            Eight weeks of targeted hypertrophy work with advanced techniques — drop sets, rest-pause, and blood flow restriction for maximum muscle growth.
+          </p>
+          <div class="program-meta">
+            <span><strong>8</strong> Weeks</span>
+            <span><strong>6</strong> Sessions/wk</span>
+            <span><strong>50-80</strong> min</span>
+          </div>
+        </div>
+        <div class="program-card reveal">
+          <span class="program-tag">Endurance</span>
+          <h3 class="program-title">Cardio Engine</h3>
+          <p class="program-desc">
+            Build your aerobic base and lactate threshold with zone-based cardio programming. Includes VO2 max intervals and recovery pace management.
+          </p>
+          <div class="program-meta">
+            <span><strong>6</strong> Weeks</span>
+            <span><strong>4</strong> Sessions/wk</span>
+            <span><strong>30-90</strong> min</span>
+          </div>
+        </div>
+        <div class="program-card reveal">
+          <span class="program-tag">Mobility</span>
+          <h3 class="program-title">Movement Mastery</h3>
+          <p class="program-desc">
+            Improve range of motion and movement quality with structured mobility flows. Perfect for active recovery or as a complement to any training program.
+          </p>
+          <div class="program-meta">
+            <span><strong>4</strong> Weeks</span>
+            <span><strong>7</strong> Sessions/wk</span>
+            <span><strong>15-30</strong> min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2 class="cta-title">Ready to transform your <em>performance</em>?</h2>
+        <p class="cta-desc">
+          Join thousands of athletes already training smarter with KINETIC. Start your first program free.
+        </p>
+        <div class="cta-actions">
+          <a href="#" class="btn-primary">
+            Claim Free Access
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#" class="btn-secondary">Talk to a Coach</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer-logo">KINET<span>IC</span></a>
+      <div class="footer-links">
+        <a href="#">Programs</a>
+        <a href="#">Pricing</a>
+        <a href="#">Coaches</a>
+        <a href="#">Support</a>
+        <a href="#">Privacy</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 KINETIC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
