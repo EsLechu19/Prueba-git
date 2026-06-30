@@ -891,8 +891,9 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-  padding: var(--space-xl) 0;
+  padding: var(--space-xl) 0 var(--space-lg);
   border-top: 1px solid var(--border-light);
+  text-align: center;
 }
 
 .footer .container {
@@ -944,6 +945,7 @@ body {
 }
 
 .footer-copy {
+  margin-top: var(--space-lg);
   font-size: 13px;
   color: var(--on-surface-variant);
   opacity: 0.6;
